@@ -36,7 +36,7 @@ EthPillar is a free, open-source tool to set up and manage your Ethereum node wi
 Open a terminal and run:
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/coincashew/EthPillar/main/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/iLLNESS/EthPillar/main/install.sh)"
 ```
 
 ---
@@ -90,7 +90,7 @@ _Main Menu_
 ### Option 1: Automated One-Liner
 
 ```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/coincashew/EthPillar/main/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/iLLNESS/EthPillar/main/install.sh)"
 ```
 
 ### Option 2: Manual Install
@@ -98,7 +98,7 @@ _Main Menu_
 ```bash
 sudo apt-get update && sudo apt-get install git curl ccze bc tmux
 mkdir -p ~/git/ethpillar
-git clone https://github.com/coincashew/ethpillar.git ~/git/ethpillar
+git clone https://github.com/iLLNESS/ethpillar.git ~/git/ethpillar
 sudo ln -s ~/git/ethpillar/ethpillar.sh /usr/local/bin/ethpillar
 ethpillar
 ```
@@ -128,7 +128,7 @@ Recommended next key steps:
 ## 📞 Support & Community
 
 - Join [Discord](https://discord.gg/dEpAVWgFNB)
-- Open issues or pull requests on [GitHub](https://github.com/coincashew/EthPillar)
+- Open issues or pull requests on [GitHub](https://github.com/iLLNESS/EthPillar)
 
 ---
 
@@ -155,7 +155,7 @@ git pull
 
 - Star the project on [GitHub](https://github.com/coincashew/EthPillar)
 - Share your experience on X or Reddit
-- Give feedback ([GitHub Issues](https://github.com/coincashew/EthPillar/issues))
+- Give feedback ([GitHub Issues](https://github.com/iLLNESS/EthPillar/issues))
 - Submit PRs to improve EthPillar!
 
 ---
