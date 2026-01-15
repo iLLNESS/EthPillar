@@ -150,7 +150,7 @@ function updateClient(){
 	  Nethermind)
 		[[ "${_arch}" == "amd64" ]] && _architecture="x64" || _architecture="arm64"
 		RELEASE_URL="https://api.github.com/repos/NethermindEth/nethermind/$_URL_SUFFIX"
-		BINARIES_URL=$(curl -s "$RELEASE_URL" | jq -r ".assets[] | select(.name) | .browser_download_url" | grep --ignore-case "${_platform}"-"${_architecture}")
+		BINARIES_URL=$(curl -s "$RELEASE_URL" | jq -r ".assets[] | select(.name) | .browser_download_url" | grep --ignore-case "${_platform}"-"${_architecture}" | grep -E "\.zip$")
 		info "✅ Downloading URL: $BINARIES_URL"
 		cd "$HOME" || true
 		wget -O nethermind.zip "$BINARIES_URL" || error "❌ Unable to wget file"
