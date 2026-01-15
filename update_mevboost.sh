@@ -30,7 +30,7 @@ function getCurrentVersion(){
 
 function selectCustomTag(){
 	local _listTags _tag
-	_listTags=$(curl -fsSL https://api.github.com/repos/flashbots/mev-boost/tags | jq -r '.[].name' | sort -hr)
+	_listTags=$(curl -fsSL https://api.github.com/repos/flashbots/mev-boost/tags | jq -r '.[].name' | sort -h)
 	if [ -z "$_listTags" ]; then
 		error "❌ Could not retrieve tags. Try again later."
 	fi
@@ -82,7 +82,7 @@ function promptViewLogs(){
 function getLatestVersion(){
     TAG_URL="https://api.github.com/repos/flashbots/mev-boost/releases/latest"
 	#Get tag name and remove leading 'v'
-	TAG=$(curl -s $TAG_URL | jq -r .tag_name | sed 's/.*v\([0-9]*\.[0-9]*\).*/\1/')
+	TAG=$(curl -s $TAG_URL | jq -r .tag_name)
 	# Exit in case of null tag
 	[[ -z $TAG ]] || [[ $TAG == "null"  ]] && echo "ERROR: Couldn't find the latest version tag" && exit 1
 	CHANGES_URL="https://github.com/flashbots/mev-boost/releases"
