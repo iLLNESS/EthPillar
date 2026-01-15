@@ -132,7 +132,7 @@ linux_install_python() {
 linux_install_validator-install() {
     ohai "Cloning ethpillar into ~/git/ethpillar"
     mkdir -p ~/git/ethpillar
-    git clone https://github.com/coincashew/ethpillar.git ~/git/ethpillar 2> /dev/null || (cd ~/git/ethpillar ; git fetch origin main ; git checkout main ; git pull)
+    git clone https://github.com/iLLNESS/ethpillar.git ~/git/ethpillar 2> /dev/null || (cd ~/git/ethpillar ; git fetch origin main ; git checkout main ; git pull)
     ohai "Installing validator-install"
     $python ~/git/ethpillar/${install_file}
     ohai "Allowing user to view journalctl logs"

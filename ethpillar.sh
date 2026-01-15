@@ -8,11 +8,11 @@
 # Made for home and solo stakers 🏠🥩
 
 # 🫶 Make improvements and suggestions on GitHub:
-#    * https://github.com/coincashew/ethpillar
+#    * https://github.com/iLLNESS/ethpillar
 # 🙌 Ask questions on Discord:
 #    * https://discord.gg/dEpAVWgFNB
 
-EP_VERSION="5.2.4"
+EP_VERSION="5.2.4.1"
 
 # Default text editor
 export EDITOR="nano"
@@ -728,7 +728,7 @@ while true; do
         ;;
       ℹ️)
         MSG_ABOUT="🏡🥩 Since Pre-Merge 2020,\n- EthPillar is a free, open source, public good.\n- Made for Ethereum. Built on-chain. Powered by community.
-        \n🚀 Get Involved: Make improvements & suggestions on GitHub\n- https://github.com/coincashew/ethpillar
+        \n🚀 Get Involved: Make improvements & suggestions on GitHub for this fork\n- https://github.com/iLLNESS/ethpillar
         \n📣 Join community & ask questions on Discord:\n- https://discord.gg/dEpAVWgFNB
         \n✨ Support EthPillar on the next Gitcoin Grants round
         \n🙏 Donations:\n[ 0xCF83d0c22dd54475cC0C52721B0ef07d9756E8C0 ] || [ coincashew.eth ]"
@@ -1503,7 +1503,7 @@ while true; do
       💻)
         [[ "${_arch}" == "arm64" ]] && echo "EL Switcher not available for arm64. Press ENTER to continue." && read && break
         [[ "${NETWORK,,}" == "ephemery" ]] && echo "EL Switcher not available for EPHEMERY testnet. To switch, use System Admin > Reinstall node . Press ENTER to continue." && read && break
-        sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/coincashew/client-switcher/master/install.sh)"
+        sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/iLLNESS/client-switcher/master/install.sh)"
         ;;
       ⌚)
         sudo dpkg-reconfigure tzdata

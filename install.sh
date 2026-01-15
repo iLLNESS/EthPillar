@@ -7,7 +7,7 @@
 # Made for home and solo stakers 🏠🥩
 
 # 🫶 Make improvements and suggestions on GitHub:
-#    * https://github.com/coincashew/ethpillar
+#    * https://github.com/iLLNESS/ethpillar
 # 🙌 Ask questions on Discord:
 #    * https://discord.gg/dEpAVWgFNB
 
