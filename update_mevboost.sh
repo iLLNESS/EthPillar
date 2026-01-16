@@ -22,7 +22,7 @@ function getCurrentVersion(){
     #Find version in format #.#.#
     if [[ $INSTALLED ]] ; then
         # shellcheck disable=SC2001
-        VERSION=$(echo "$INSTALLED" | sed 's/^[^ ]* *//')
+        VERSION=$(echo "$INSTALLED" | sed 's/[a-zA-Z]//g')
 	else
 		VERSION="Client not installed."
 	fi
