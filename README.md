@@ -1,3 +1,7 @@
+## 🚀 Why would I use this fork of EthPillar?
+
+Unfortunately, coincashew has not been seen since the last quarter of 2025. Since then, a few minor bugs have been discovered in EthPillar. This fork addresses's some of those bugs so you can continue to use EthPillar. 
+
 ### Do you like this software? Star the project and become a [⭐ Stargazer](https://github.com/coincashew/ethpillar/stargazers)
 
 # 🛡️ EthPillar
